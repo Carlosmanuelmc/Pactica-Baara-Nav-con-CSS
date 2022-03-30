@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ejemplo nuevos controles</title>
+    </head>
+    <body>
+        <form
+        action="."
+        oninput="range_control_value.value=range_control_valueASNumber">
+        <p>
+         nombre:<input type="text" name="name_control" autofocus required/>
+         <br/>
+         corre electronico:<input type="email" name="email_control" required/>
+         <br/>
+         URL
+         <input
+         type="url"
+         name="url_control"
+         placeholder="Escripe la URL de tu pagina de tu pagina web personal"/>
+         <br/>
+         fecha:=<input type="date" name="date_control" />
+         <br />
+         tiempo:=<input type="time" name="time_control" />
+         <br />
+         fecha y hora de nacimiento:=<input type="datetime" name="datetime_control" />
+         <br />
+         mes:=<input type="month" name="month_control" />
+         <br />
+         semna:=<input type="week" name="week_control" />
+         <br />
+         Numero(min-10.max 10);
+         <input
+         type="number"
+         name="number_control"
+         min="-10"
+         max="10"
+         value="0"
+         />
+         <br/>
+         intervalo(min 0, max 10)
+         <input type="range" name="range_control" min="0" max="10" value="0" />
+         <output for="range_control" name="range_control_value">0</output>
+         <br/>
+         Telefono:<input type="tel" name="tel_control" />
+         <br/>
+         Termino de busqueda:<input type="search" name="search_control" />
+         <br/>
+         Color favorito:<input type="color" name="color_control" />
+         <br/>
+         <input type="submit" value="submitl" />
+        </p>
+    </form>
+    </body>
+</html>
